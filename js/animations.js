@@ -37,9 +37,15 @@
 
   // Touch devices: tap to flip service cards (hover doesn't exist on mobile)
   if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
+    document.querySelectorAll('.flip-hint').forEach(el => el.textContent = 'Tap me');
+
     document.querySelectorAll('.flip-card').forEach(card => {
-      card.addEventListener('click', (e) => {
-        if (!e.target.closest('.flip-book-link')) card.classList.toggle('flipped');
+      card.addEventListener('touchend', (e) => {
+        if (e.target.closest('.flip-book-link')) return;
+        e.preventDefault();
+        const wasFlipped = card.classList.contains('flipped');
+        document.querySelectorAll('.flip-card').forEach(c => c.classList.remove('flipped'));
+        if (!wasFlipped) card.classList.add('flipped');
       });
     });
   }
