@@ -1,6 +1,291 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>C&C by Jordan & Aurora | Cut & Color Studio</title>
+  <meta name="description" content="C&C is a boutique cut and color studio by Jordan and Aurora. Book haircuts, color, balayage, perms, facials, and waxing services online.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="C&C by Jordan & Aurora | Cut & Color Studio">
+  <meta property="og:description" content="A boutique salon rooted in good vibes and genuine craft. Book your appointment online.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://winkiwu630.github.io/mock-salon/">
+  <link rel="canonical" href="https://winkiwu630.github.io/mock-salon/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    "name": "C&C by Jordan & Aurora",
+    "description": "Boutique cut and color studio offering hair color, balayage, cuts, perms, facials, and waxing.",
+    "url": "https://winkiwu630.github.io/mock-salon/",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Bloom Street, Suite 4",
+      "addressLocality": "Your City",
+      "addressCountry": "US"
+    },
+    "telephone": "+15551234567",
+    "openingHours": "Mo-Sa 09:00-17:00",
+    "priceRange": "$$"
+  }
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
-  <html>
-    <body>
-    </body>
-  </html>
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav" id="mainNav">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-cc">C&C</span>
+      <span class="logo-sub">by Jordan &amp; Aurora</span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="nav-dropdown" id="navDropdown">
+        <button class="dropdown-trigger" id="dropdownTrigger">
+          Explore <span class="chevron">&#9660;</span>
+        </button>
+        <div class="dropdown-panel">
+          <a href="services.html">Services</a>
+          <a href="gallery.html">Our Work</a>
+          <a href="booking.html">Book Appointment</a>
+          <a href="calendar.html">View Calendar</a>
+        </div>
+      </li>
+    </ul>
+
+    <a href="booking.html" class="btn btn-primary nav-book">Book Now</a>
+
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="nav-mobile" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Our Work</a>
+    <a href="booking.html">Book Appointment</a>
+    <a href="calendar.html">Calendar</a>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-bg">
+      <!-- Swap for: <img src="images/hero.jpg" alt="Salon interior" style="width:100%;height:100%;object-fit:cover;"> -->
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Cut &amp; Color Studio</p>
+      <h1 class="hero-title">C&amp;C</h1>
+      <p class="hero-byline">by Jordan &amp; Aurora</p>
+      <div class="hero-divider"></div>
+      <p class="hero-tagline">Where every cut tells a story &amp; every color is a canvas.</p>
+      <div class="hero-cta">
+        <a href="booking.html" class="btn btn-primary">Book an Appointment</a>
+        <a href="services.html" class="btn btn-ghost">Our Services</a>
+      </div>
+    </div>
+    <div class="scroll-cue">
+      <span>Scroll</span>
+      <div class="line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- Image -->
+        <div class="about-media reveal left">
+          <div class="about-img-main" style="width:100%;aspect-ratio:3/4;background:linear-gradient(160deg,var(--plum) 0%,var(--terracotta) 80%,var(--gold) 100%);border-radius:var(--radius);display:block;"></div>
+          <div class="about-img-accent"></div>
+        </div>
+
+        <!-- Text -->
+        <div class="about-text reveal right">
+          <span class="section-label">Our Story</span>
+          <h2 class="section-title">Two friends.<br><em>One dream.</em></h2>
+          <div class="about-divider"></div>
+          <p>
+            C&amp;C was born from a friendship, a shared passion, and way too many hours spent talking about hair over cold coffee. Jordan and Aurora met in cosmetology school, bonded over their obsession with color theory and texture work, and never stopped dreaming about having a space of their own.
+          </p>
+          <p>
+            Today that dream is a studio where you can come exactly as you are, leave feeling like yourself again, and never once sit under fluorescent lights while a stranger asks if you want "just a trim."
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num" data-count="6" data-suffix="+">0+</span>
+              <span class="stat-lbl">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-count="400" data-suffix="+">0+</span>
+              <span class="stat-lbl">Happy Clients</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-count="12" data-suffix="">0</span>
+              <span class="stat-lbl">Services Offered</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY STRIP ===== -->
+  <div class="gallery-strip">
+    <div class="gallery-track">
+      <a href="gallery.html" class="gallery-item"><img src="images/GalleryStrip-Blonde.webp" alt="" style="width:100%;height:100%;object-fit:cover;"></a>
+      <a href="gallery.html" class="gallery-item"><img src="images/GalleryStrip-BrunettePerm.jpeg" alt="" style="width:100%;height:100%;object-fit:cover;"></a>
+      <a href="gallery.html" class="gallery-item"><img src="images/GalleryStrip-PinkHair.jpg" alt="" style="width:100%;height:100%;object-fit:cover;"></a>
+      <a href="gallery.html" class="gallery-item"><img src="images/GalleryStrip-PurpleHair.jpeg" alt="" style="width:100%;height:100%;object-fit:cover;"></a>
+      <a href="gallery.html" class="gallery-item"><img src="images/GalleryStrip-WavyPerm.jpg" alt="" style="width:100%;height:100%;object-fit:cover;"></a>
+      <a href="gallery.html" class="gallery-item"><img src="images/GalleryStrip-BridalBun.jpg" alt="" style="width:100%;height:100%;object-fit:cover;"></a>
+      <a href="gallery.html" class="gallery-item"><img src="images/GalleryStrip-PurpleOmbre.jpeg" alt="" style="width:100%;height:100%;object-fit:cover;"></a>
+      <a href="gallery.html" class="gallery-item"><img src="images/GalleryStrip-Perm.jpeg" alt="" style="width:100%;height:100%;object-fit:cover;"></a>
+      <a href="gallery.html" class="gallery-item"><img src="images/GalleryStrip-BridalDown.jpeg" alt="" style="width:100%;height:100%;object-fit:cover;"></a>
+      <!-- Duplicated for seamless loop -->
+      <a href="gallery.html" class="gallery-item"><img src="images/GalleryStrip-Blonde.webp" alt="" style="width:100%;height:100%;object-fit:cover;"></a>
+      <a href="gallery.html" class="gallery-item"><img src="images/GalleryStrip-BrunettePerm.jpeg" alt="" style="width:100%;height:100%;object-fit:cover;"></a>
+      <a href="gallery.html" class="gallery-item"><img src="images/GalleryStrip-PinkHair.jpg" alt="" style="width:100%;height:100%;object-fit:cover;"></a>
+      <a href="gallery.html" class="gallery-item"><img src="images/GalleryStrip-PurpleHair.jpeg" alt="" style="width:100%;height:100%;object-fit:cover;"></a>
+      <a href="gallery.html" class="gallery-item"><img src="images/GalleryStrip-WavyPerm.jpg" alt="" style="width:100%;height:100%;object-fit:cover;"></a>
+      <a href="gallery.html" class="gallery-item"><img src="images/GalleryStrip-BridalBun.jpg" alt="" style="width:100%;height:100%;object-fit:cover;"></a>
+      <a href="gallery.html" class="gallery-item"><img src="images/GalleryStrip-PurpleOmbre.jpeg" alt="" style="width:100%;height:100%;object-fit:cover;"></a>
+      <a href="gallery.html" class="gallery-item"><img src="images/GalleryStrip-Perm.jpeg" alt="" style="width:100%;height:100%;object-fit:cover;"></a>
+      <a href="gallery.html" class="gallery-item"><img src="images/GalleryStrip-BridalDown.jpeg" alt="" style="width:100%;height:100%;object-fit:cover;"></a>
+    </div>
+  </div>
+
+  <!-- ===== TEAM ===== -->
+  <section class="team">
+    <div class="container">
+      <div class="team-header">
+        <div class="reveal up">
+          <span class="section-label">Meet the Team</span>
+          <h2 class="section-title">The women<br><em>behind the magic.</em></h2>
+          <p class="section-sub">Two stylists. One shared love of bold color, effortless texture, and making people feel like the best version of themselves.</p>
+        </div>
+        <a href="booking.html" class="btn btn-gold reveal up reveal-delay-2">Book with Us</a>
+      </div>
+
+      <div class="team-grid">
+
+        <!-- Aurora -->
+        <a href="calendar.html?stylist=aurora" class="team-card reveal up reveal-delay-1" style="text-decoration:none;display:block;">
+          <div class="team-photo" style="padding:0;">
+            <img src="images/Aurora-solo.jpg" alt="Aurora" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Aurora</h3>
+            <p class="team-role">Master Colorist &amp; Co-Founder</p>
+            <p class="team-bio">
+              Aurora has a gift for color that goes way beyond the chair. Whether she's doing a lived-in balayage, a vibrant creative color, or a precision toner, her clients always leave looking exactly like what they described, and somehow better.
+            </p>
+            <div class="team-tags">
+              <span class="tag">Balayage</span>
+              <span class="tag">Creative Color</span>
+              <span class="tag">Keratin</span>
+              <span class="tag">Extensions</span>
+              <span class="tag">Facials</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Jordan -->
+        <a href="calendar.html?stylist=jordan" class="team-card reveal up reveal-delay-2" style="text-decoration:none;display:block;">
+          <div class="team-photo" style="padding:0;">
+            <div style="width:100%;height:100%;background:linear-gradient(160deg,var(--sage) 0%,var(--brown) 100%);"></div>
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Jordan</h3>
+            <p class="team-role">Cut Specialist &amp; Co-Founder</p>
+            <p class="team-bio">
+              Jordan's superpower is making a haircut feel like a reset. She listens. She asks the right questions. She knows that "low maintenance" means something different to everyone, and she's never given anyone a haircut they've had to explain.
+            </p>
+            <div class="team-tags">
+              <span class="tag">Precision Cuts</span>
+              <span class="tag">Curly Hair</span>
+              <span class="tag">Perms</span>
+              <span class="tag">Bridal</span>
+              <span class="tag">Waxing</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BAND ===== -->
+  <section class="cta-band">
+    <div class="container">
+      <span class="section-label reveal up">Ready when you are</span>
+      <h2 class="section-title reveal up reveal-delay-1">Your next favorite<br><em>hair day starts here.</em></h2>
+      <p class="reveal up reveal-delay-2">No judgment, no pressure. Just two people who genuinely love what they do and can't wait to work with you.</p>
+      <a href="booking.html" class="btn btn-light reveal up reveal-delay-3">Schedule Your Visit</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-logo">
+        <span class="logo-cc">C&amp;C</span>
+        <span class="logo-sub">by Jordan &amp; Aurora</span>
+        <p class="footer-desc">A boutique cut &amp; color studio rooted in good vibes, genuine craft, and the belief that everyone deserves a great hair day.</p>
+      </div>
+      <div>
+        <p class="footer-heading">Navigate</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Our Work</a></li>
+          <li><a href="booking.html">Book Now</a></li>
+          <li><a href="calendar.html">Calendar</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Services</p>
+        <ul class="footer-links">
+          <li><a href="services.html">Hair Color</a></li>
+          <li><a href="services.html">Cuts &amp; Trims</a></li>
+          <li><a href="services.html">Perms</a></li>
+          <li><a href="services.html">Facials</a></li>
+          <li><a href="services.html">Waxing</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <p class="footer-heading">Get in Touch</p>
+        <p>
+          123 Bloom Street<br>
+          Suite 4, Your City<br><br>
+          <a href="tel:5551234567">(555) 123-4567</a><br>
+          <a href="mailto:hello@candcsalon.com">hello@candcsalon.com</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-social">
+      <span class="footer-social-label">Follow Along</span>
+      <a href="https://www.instagram.com/candcbyjordanaurora/" target="_blank" rel="noopener noreferrer" aria-label="C&amp;C on Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </a>
+      <a href="https://www.facebook.com/candcbyjordanaurora" target="_blank" rel="noopener noreferrer" aria-label="C&amp;C on Facebook">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+      </a>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 C&amp;C by Jordan &amp; Aurora. All rights reserved.</span>
+      <span>Website designed by <a href="https://thecodingnewbie.com/index.html" target="_blank" rel="noopener">TheCodingNewbie</a></span>
+      <a href="booking.html">Book an Appointment &rarr;</a>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

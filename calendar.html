@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Availability Calendar | C&C by Jordan & Aurora</title>
+  <meta name="description" content="View C&C's live availability calendar. See open appointment slots for Jordan and Aurora and book directly from any available time.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Availability Calendar | C&C by Jordan & Aurora">
+  <meta property="og:description" content="Browse open appointment slots by stylist and book directly from the calendar.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://winkiwu630.github.io/mock-salon/calendar.html">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav scrolled" id="mainNav">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-cc">C&C</span>
+      <span class="logo-sub">by Jordan &amp; Aurora</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="nav-dropdown" id="navDropdown">
+        <button class="dropdown-trigger" id="dropdownTrigger">
+          Explore <span class="chevron">&#9660;</span>
+        </button>
+        <div class="dropdown-panel">
+          <a href="services.html">Services</a>
+          <a href="gallery.html">Our Work</a>
+          <a href="booking.html">Book Appointment</a>
+          <a href="calendar.html">View Calendar</a>
+        </div>
+      </li>
+    </ul>
+    <a href="booking.html" class="btn btn-primary nav-book">Book Now</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="nav-mobile" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Our Work</a>
+    <a href="booking.html">Book Appointment</a>
+    <a href="calendar.html">Calendar</a>
+  </div>
+
+  <!-- ===== PAGE HERO ===== -->
+  <div class="page-hero" data-title="Calendar">
+    <div>
+      <span class="page-hero-label">Availability</span>
+      <h1 class="page-hero-title">Appointment <em>Calendar</em></h1>
+    </div>
+  </div>
+
+  <!-- ===== CALENDAR SECTION ===== -->
+  <section class="calendar-section">
+    <div class="container">
+
+      <div class="calendar-controls">
+        <div class="cal-full-nav">
+          <button class="cal-full-nav-btn" id="calPrev">&#8249;</button>
+          <span class="cal-full-month" id="calMonthLabel">June 2026</span>
+          <button class="cal-full-nav-btn" id="calNext">&#8250;</button>
+        </div>
+        <div class="stylist-filter">
+          <button class="filter-btn active" data-filter="all">All Stylists</button>
+          <button class="filter-btn" data-filter="aurora">Aurora</button>
+          <button class="filter-btn" data-filter="jordan">Jordan</button>
+        </div>
+      </div>
+
+      <!-- Calendar grid -->
+      <div class="cal-full-grid" id="calGrid"></div>
+
+      <!-- Legend -->
+      <div class="cal-legend-full">
+        <div class="cal-legend-item">
+          <div class="legend-dot" style="background:rgba(92,34,80,0.2);border:1px solid var(--plum);border-radius:3px;width:16px;height:10px;"></div>
+          <span>Aurora available</span>
+        </div>
+        <div class="cal-legend-item">
+          <div class="legend-dot" style="background:rgba(122,155,118,0.25);border:1px solid var(--sage-dark);border-radius:3px;width:16px;height:10px;"></div>
+          <span>Jordan available</span>
+        </div>
+        <div class="cal-legend-item">
+          <div class="legend-dot" style="background:rgba(0,0,0,0.07);border-radius:3px;width:16px;height:10px;"></div>
+          <span>Fully booked</span>
+        </div>
+        <div class="cal-legend-item">
+          <div class="legend-dot" style="background:var(--terracotta);border-radius:50%;width:10px;height:10px;"></div>
+          <span>Today</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Day detail modal -->
+  <div class="cal-modal-overlay" id="dayModal">
+    <div class="cal-modal">
+      <button class="cal-modal-close" id="modalClose">&times;</button>
+      <p class="cal-modal-date" id="modalDate">Thursday, June 19</p>
+      <p class="cal-modal-sub">Select a time slot below to begin booking.</p>
+      <div class="cal-modal-slots" id="modalSlots"></div>
+      <p style="font-size:0.8rem;color:var(--brown-lt);margin-top:0.5rem;">Click any available slot to go straight to booking with your date and time pre-selected.</p>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-logo">
+        <span class="logo-cc">C&amp;C</span>
+        <span class="logo-sub">by Jordan &amp; Aurora</span>
+        <p class="footer-desc">A boutique cut &amp; color studio rooted in good vibes, genuine craft, and the belief that everyone deserves a great hair day.</p>
+      </div>
+      <div>
+        <p class="footer-heading">Navigate</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Our Work</a></li>
+          <li><a href="booking.html">Book Now</a></li>
+          <li><a href="calendar.html">Calendar</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Services</p>
+        <ul class="footer-links">
+          <li><a href="services.html">Hair Color</a></li>
+          <li><a href="services.html">Cuts &amp; Trims</a></li>
+          <li><a href="services.html">Perms</a></li>
+          <li><a href="services.html">Facials</a></li>
+          <li><a href="services.html">Waxing</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <p class="footer-heading">Get in Touch</p>
+        <p>
+          123 Bloom Street<br>
+          Suite 4, Your City<br><br>
+          <a href="tel:5551234567">(555) 123-4567</a><br>
+          <a href="mailto:hello@candcsalon.com">hello@candcsalon.com</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-social">
+      <span class="footer-social-label">Follow Along</span>
+      <a href="https://www.instagram.com/candcbyjordanaurora/" target="_blank" rel="noopener noreferrer" aria-label="C&amp;C on Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </a>
+      <a href="https://www.facebook.com/candcbyjordanaurora" target="_blank" rel="noopener noreferrer" aria-label="C&amp;C on Facebook">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+      </a>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 C&amp;C by Jordan &amp; Aurora. All rights reserved.</span>
+      <span>Website designed by <a href="https://thecodingnewbie.com/index.html" target="_blank" rel="noopener">TheCodingNewbie</a></span>
+      <a href="booking.html">Book an Appointment &rarr;</a>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script>
+  (() => {
+    const MONTH_NAMES = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+    const DAY_NAMES   = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+    const today = new Date();
+    let viewYear  = today.getFullYear();
+    let viewMonth = today.getMonth();
+    let activeFilter = 'all';
+
+    function timeToMinutes(t) {
+      const [time, period] = t.split(' ');
+      let [h, m] = time.split(':').map(Number);
+      if (period === 'PM' && h !== 12) h += 12;
+      if (period === 'AM' && h === 12) h = 0;
+      return h * 60 + m;
+    }
+
+    // Mock schedule data: [day] -> array of slot objects
+    function getMockSchedule(year, month) {
+      const daysInMonth = new Date(year, month + 1, 0).getDate();
+      const schedule = {};
+      for (let d = 1; d <= daysInMonth; d++) {
+        const dow = new Date(year, month, d).getDay();
+        if (dow === 0) continue; // Closed Sundays
+
+        // Seed pseudo-random data off the date
+        const seed = (year * 31 + month * 7 + d) % 10;
+        const slots = [];
+
+        if (seed < 8) {
+          // Aurora slots
+          const auroraTimes = ['9:00 AM','10:30 AM','1:30 PM','3:00 PM'];
+          const auroraBooked = seed < 4 ? ['10:30 AM'] : [];
+          auroraTimes.forEach(t => slots.push({ stylist: 'aurora', time: t, booked: auroraBooked.includes(t) }));
+        }
+        if (seed < 7 || seed === 9) {
+          // Jordan slots
+          const jordanTimes = ['9:00 AM','12:00 PM','1:30 PM','4:30 PM'];
+          const jordanBooked = seed < 3 ? ['12:00 PM','4:30 PM'] : seed < 6 ? ['9:00 AM'] : [];
+          jordanTimes.forEach(t => slots.push({ stylist: 'jordan', time: t, booked: jordanBooked.includes(t) }));
+        }
+
+        schedule[d] = slots;
+      }
+      return schedule;
+    }
+
+    function render() {
+      const grid = document.getElementById('calGrid');
+      const label = document.getElementById('calMonthLabel');
+      if (!grid || !label) return;
+
+      label.textContent = `${MONTH_NAMES[viewMonth]} ${viewYear}`;
+      grid.innerHTML = '';
+
+      // Headers
+      DAY_NAMES.forEach(d => {
+        const h = document.createElement('div');
+        h.className = 'cal-full-header';
+        h.textContent = d;
+        grid.appendChild(h);
+      });
+
+      const firstDow   = new Date(viewYear, viewMonth, 1).getDay();
+      const daysInMonth = new Date(viewYear, viewMonth + 1, 0).getDate();
+      const schedule   = getMockSchedule(viewYear, viewMonth);
+
+      // Empty cells
+      for (let i = 0; i < firstDow; i++) {
+        const e = document.createElement('div');
+        e.className = 'cal-full-cell empty';
+        grid.appendChild(e);
+      }
+
+      for (let d = 1; d <= daysInMonth; d++) {
+        const cell = document.createElement('div');
+        const isToday = d === today.getDate() && viewMonth === today.getMonth() && viewYear === today.getFullYear();
+        const dow = new Date(viewYear, viewMonth, d).getDay();
+        const slots = schedule[d] || [];
+
+        const isPast = new Date(viewYear, viewMonth, d) < new Date(today.getFullYear(), today.getMonth(), today.getDate());
+
+        cell.className = 'cal-full-cell';
+        if (isToday) cell.classList.add('today');
+        if (dow === 0 || isPast) cell.classList.add('past');
+
+        const dateNum = document.createElement('div');
+        dateNum.className = 'cal-date-num';
+        dateNum.textContent = d;
+        cell.appendChild(dateNum);
+
+        if (!isPast && dow !== 0) {
+          // All slots sorted by time
+          const allSorted = slots
+            .filter(s => activeFilter === 'all' || s.stylist === activeFilter)
+            .sort((a, b) => timeToMinutes(a.time) - timeToMinutes(b.time));
+
+          // Cell pills: available only, sorted by time
+          const available = allSorted.filter(s => !s.booked);
+
+          available.slice(0, 4).forEach(s => {
+            const pill = document.createElement('span');
+            pill.className = `cal-slot-pill ${s.stylist}`;
+            const name = s.stylist === 'aurora' ? 'Aurora' : 'Jordan';
+            pill.textContent = `${name} ${s.time}`;
+            cell.appendChild(pill);
+          });
+
+          const hiddenCount = (available.length > 4 ? available.length - 4 : 0)
+                            + allSorted.filter(s => s.booked).length;
+          if (hiddenCount > 0) {
+            const more = document.createElement('span');
+            more.className = 'cal-slot-pill booked';
+            more.textContent = `+${hiddenCount} more`;
+            cell.appendChild(more);
+          }
+
+          if (allSorted.length > 0) {
+            cell.classList.add('has-slots');
+            cell.addEventListener('click', () => openModal(d, slots));
+          } else {
+            cell.classList.add('no-avail');
+          }
+        }
+
+        grid.appendChild(cell);
+      }
+
+      // Trailing empty cells to fill out the last row
+      const trailingCells = (7 - (firstDow + daysInMonth) % 7) % 7;
+      for (let i = 0; i < trailingCells; i++) {
+        const e = document.createElement('div');
+        e.className = 'cal-full-cell empty';
+        grid.appendChild(e);
+      }
+    }
+
+    function openModal(day, slots) {
+      const modal = document.getElementById('dayModal');
+      const dateEl = document.getElementById('modalDate');
+      const slotsEl = document.getElementById('modalSlots');
+      if (!modal || !dateEl || !slotsEl) return;
+
+      const dateObj = new Date(viewYear, viewMonth, day);
+      dateEl.textContent = dateObj.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
+
+      const visSlots = slots
+        .filter(s => activeFilter === 'all' || s.stylist === activeFilter)
+        .sort((a, b) => timeToMinutes(a.time) - timeToMinutes(b.time));
+      slotsEl.innerHTML = '';
+
+      const dateStr = `${viewYear}-${String(viewMonth + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+
+      visSlots.forEach(s => {
+        const name = s.stylist === 'aurora' ? 'Aurora' : 'Jordan';
+        if (s.booked) {
+          const el = document.createElement('div');
+          el.className = 'time-slot taken';
+          el.innerHTML = `<span class="ts-time">${name} · ${s.time}</span><span class="ts-status taken">Booked</span>`;
+          slotsEl.appendChild(el);
+        } else {
+          const url = `booking.html?date=${dateStr}&time=${encodeURIComponent(s.time)}&stylist=${encodeURIComponent(name)}`;
+          const el = document.createElement('a');
+          el.href = url;
+          el.className = 'time-slot';
+          el.style.textDecoration = 'none';
+          el.innerHTML = `<span class="ts-time">${name} · ${s.time}</span><span class="ts-status open">Book this slot →</span>`;
+          slotsEl.appendChild(el);
+        }
+      });
+
+      modal.classList.add('open');
+    }
+
+    document.getElementById('modalClose')?.addEventListener('click', () => {
+      document.getElementById('dayModal').classList.remove('open');
+    });
+    document.getElementById('dayModal')?.addEventListener('click', (e) => {
+      if (e.target === e.currentTarget) e.currentTarget.classList.remove('open');
+    });
+
+    document.getElementById('calPrev')?.addEventListener('click', () => {
+      viewMonth--;
+      if (viewMonth < 0) { viewMonth = 11; viewYear--; }
+      render();
+    });
+    document.getElementById('calNext')?.addEventListener('click', () => {
+      viewMonth++;
+      if (viewMonth > 11) { viewMonth = 0; viewYear++; }
+      render();
+    });
+
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeFilter = btn.getAttribute('data-filter');
+        render();
+      });
+    });
+
+    // Auto-apply stylist filter from URL param
+    const urlStylist = new URLSearchParams(window.location.search).get('stylist');
+    if (urlStylist === 'aurora' || urlStylist === 'jordan') {
+      activeFilter = urlStylist;
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-filter') === urlStylist);
+      });
+    }
+
+    render();
+  })();
+  </script>
+</body>
+</html>

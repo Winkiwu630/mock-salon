@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | C&C by Jordan & Aurora</title>
+  <meta name="description" content="Browse C&C's full service menu: hair color, balayage, cuts, perms, styling, facials, and waxing. Hover any card to see sub-services and pricing.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Services | C&C by Jordan & Aurora">
+  <meta property="og:description" content="Hair color, balayage, cuts, perms, styling, facials, and waxing. Prices starting from $15.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://winkiwu630.github.io/mock-salon/services.html">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav scrolled" id="mainNav">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-cc">C&C</span>
+      <span class="logo-sub">by Jordan &amp; Aurora</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="nav-dropdown" id="navDropdown">
+        <button class="dropdown-trigger" id="dropdownTrigger">
+          Explore <span class="chevron">&#9660;</span>
+        </button>
+        <div class="dropdown-panel">
+          <a href="services.html">Services</a>
+          <a href="gallery.html">Our Work</a>
+          <a href="booking.html">Book Appointment</a>
+          <a href="calendar.html">View Calendar</a>
+        </div>
+      </li>
+    </ul>
+    <a href="booking.html" class="btn btn-primary nav-book">Book Now</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="nav-mobile" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Our Work</a>
+    <a href="booking.html">Book Appointment</a>
+    <a href="calendar.html">Calendar</a>
+  </div>
+
+  <!-- ===== PAGE HERO ===== -->
+  <div class="page-hero" data-title="Services">
+    <div>
+      <span class="page-hero-label">What we do</span>
+      <h1 class="page-hero-title">Our <em>Services</em></h1>
+    </div>
+  </div>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section class="services-section">
+    <div class="container">
+      <div class="services-intro reveal up">
+        <span class="section-label">Hover or tap any card to learn more</span>
+        <h2 class="section-title">Crafted with<br><em>intention.</em></h2>
+        <p class="section-sub">Every service is tailored to you. We don't do cookie-cutter. We do consultations, conversations, and results that actually make sense for your hair and your life.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- Hair Foiling -->
+        <div class="flip-card reveal up reveal-delay-1">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img class="flip-card-front-img" src="images/hair-foiling-card.jpg" alt="Hair foiling" style="width:100%;height:70%;object-fit:cover;">
+              <div class="flip-card-front-body">
+                <h3>Hair Foiling</h3>
+                <span class="flip-hint">Hover me</span>
+              </div>
+            </div>
+            <div class="flip-card-back has-subcards">
+              <h3>Hair Foiling</h3>
+              <span class="flip-sub-label">Choose your technique</span>
+              <div class="subcard-grid">
+                <div class="subcard-cell">
+                  <img src="images/foiling-subcard-highlights.webp" alt="Highlights">
+                  <div class="subcard-cell-info">
+                    <span class="subcard-cell-name">Highlights</span>
+                    <span class="subcard-cell-price">From $95</span>
+                    <a class="subcard-cell-book flip-book-link" href="booking.html?service=Hair+Color&amp;subservice=Highlights">Book →</a>
+                  </div>
+                </div>
+                <div class="subcard-cell">
+                  <img src="images/foiling-subcard-ombre.jpeg" alt="Ombré">
+                  <div class="subcard-cell-info">
+                    <span class="subcard-cell-name">Ombré</span>
+                    <span class="subcard-cell-price">From $130</span>
+                    <a class="subcard-cell-book flip-book-link" href="booking.html?service=Hair+Color&amp;subservice=Ombr%C3%A9">Book →</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Haircut -->
+        <div class="flip-card reveal up reveal-delay-2">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img class="flip-card-front-img" src="images/haircut-card.jpg" alt="Haircut" style="width:100%;height:70%;object-fit:cover;">
+              <div class="flip-card-front-body">
+                <h3>Haircuts</h3>
+                <span class="flip-hint">Hover me</span>
+              </div>
+            </div>
+            <div class="flip-card-back has-subcards">
+              <h3>Haircuts</h3>
+              <span class="flip-sub-label">All ages, all textures</span>
+              <div class="subcard-list">
+                <div class="subcard-row">
+                  <img src="images/haircut-subcard-womens.jpeg" alt="Women's cut">
+                  <div class="subcard-row-info">
+                    <span class="subcard-row-name">Women's Cut</span>
+                    <span class="subcard-row-price">From $45</span>
+                    <a class="subcard-book flip-book-link" href="booking.html?service=Cut+%26+Trim&amp;subservice=Women%27s+Cut">Book →</a>
+                  </div>
+                </div>
+                <div class="subcard-row">
+                  <img src="images/haircut-subcard-mens.jpeg" alt="Men's cut">
+                  <div class="subcard-row-info">
+                    <span class="subcard-row-name">Men's Cut</span>
+                    <span class="subcard-row-price">From $30</span>
+                    <a class="subcard-book flip-book-link" href="booking.html?service=Cut+%26+Trim&amp;subservice=Men%27s+Cut">Book →</a>
+                  </div>
+                </div>
+                <div class="subcard-row">
+                  <img src="images/haircut-subcard-kids.jpg" alt="Kids cut">
+                  <div class="subcard-row-info">
+                    <span class="subcard-row-name">Kids' Cut</span>
+                    <span class="subcard-row-price">From $20</span>
+                    <a class="subcard-book flip-book-link" href="booking.html?service=Cut+%26+Trim&amp;subservice=Kids%27+Cut">Book →</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hair Styling -->
+        <div class="flip-card reveal up reveal-delay-3">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img class="flip-card-front-img" src="images/hairstyling-card.jpg" alt="Hair styling" style="width:100%;height:70%;object-fit:cover;">
+              <div class="flip-card-front-body">
+                <h3>Hair Styling</h3>
+                <span class="flip-hint">Hover me</span>
+              </div>
+            </div>
+            <div class="flip-card-back has-subcards">
+              <h3>Hair Styling</h3>
+              <span class="flip-sub-label">For any occasion</span>
+              <div class="subcard-list">
+                <div class="subcard-row">
+                  <img src="images/hairstyling-subcard-1.jpeg" alt="Blowout">
+                  <div class="subcard-row-info">
+                    <span class="subcard-row-name">Blowout</span>
+                    <span class="subcard-row-price">From $40</span>
+                    <a class="subcard-book flip-book-link" href="booking.html?service=Hair+Styling&amp;subservice=Blowout">Book →</a>
+                  </div>
+                </div>
+                <div class="subcard-row">
+                  <img src="images/hairstyling-subcard-2.jpeg" alt="Updo">
+                  <div class="subcard-row-info">
+                    <span class="subcard-row-name">Updo &amp; Formal</span>
+                    <span class="subcard-row-price">From $65</span>
+                    <a class="subcard-book flip-book-link" href="booking.html?service=Hair+Styling&amp;subservice=Updo+%26+Formal">Book →</a>
+                  </div>
+                </div>
+                <div class="subcard-row">
+                  <img src="images/hairstyling-subcard-3.jpeg" alt="Braids">
+                  <div class="subcard-row-info">
+                    <span class="subcard-row-name">Braids &amp; Waves</span>
+                    <span class="subcard-row-price">From $55</span>
+                    <a class="subcard-book flip-book-link" href="booking.html?service=Hair+Styling&amp;subservice=Braids+%26+Waves">Book →</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Perms -->
+        <div class="flip-card reveal up reveal-delay-1">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img class="flip-card-front-img" src="images/perm-card.jpg" alt="Perms" style="width:100%;height:70%;object-fit:cover;">
+              <div class="flip-card-front-body">
+                <h3>Perms</h3>
+                <span class="flip-hint">Hover me</span>
+              </div>
+            </div>
+            <div class="flip-card-back has-subcards">
+              <h3>Perms</h3>
+              <span class="flip-sub-label">Curl your way</span>
+              <div class="subcard-grid">
+                <div class="subcard-cell">
+                  <img src="images/perm-subcard-rollers.jpg" alt="Classic Perm">
+                  <div class="subcard-cell-info">
+                    <span class="subcard-cell-name">Classic Perm</span>
+                    <span class="subcard-cell-price">From $120</span>
+                    <a class="subcard-cell-book flip-book-link" href="booking.html?service=Perm&amp;subservice=Classic+Perm">Book →</a>
+                  </div>
+                </div>
+                <div class="subcard-cell">
+                  <img src="images/perm-subcard-chair.jpg" alt="Body Wave">
+                  <div class="subcard-cell-info">
+                    <span class="subcard-cell-name">Body Wave</span>
+                    <span class="subcard-cell-price">From $95</span>
+                    <a class="subcard-cell-book flip-book-link" href="booking.html?service=Perm&amp;subservice=Body+Wave">Book →</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Balayage (kept, text back) -->
+        <div class="flip-card reveal up reveal-delay-1">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="flip-card-front-img"></div>
+              <div class="flip-card-front-body">
+                <h3>Balayage</h3>
+                <span class="flip-hint">Hover me</span>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <div class="service-icon">✨</div>
+              <h3>Balayage</h3>
+              <p>Hand-painted highlights for that effortlessly sun-kissed look. Aurora's freehand technique creates seamless, natural-looking dimension that grows out beautifully with minimal upkeep.</p>
+              <div class="price-range">
+                <span class="price-label">Starting at</span>
+                <span class="price-value">$150</span>
+              </div>
+              <a class="flip-back-cta flip-book-link" href="booking.html?service=Balayage">Book This Service →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Facials -->
+        <div class="flip-card reveal up reveal-delay-2">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img class="flip-card-front-img" src="images/facial-card.webp" alt="Facial" style="width:100%;height:70%;object-fit:cover;">
+              <div class="flip-card-front-body">
+                <h3>Facials</h3>
+                <span class="flip-hint">Hover me</span>
+              </div>
+            </div>
+            <div class="flip-card-back has-subcards">
+              <h3>Facials</h3>
+              <span class="flip-sub-label">Skin that glows</span>
+              <div class="subcard-list">
+                <div class="subcard-row">
+                  <img src="images/facial-subcard-standard.webp" alt="Standard Facial">
+                  <div class="subcard-row-info">
+                    <span class="subcard-row-name">Standard Facial</span>
+                    <span class="subcard-row-price">From $60</span>
+                    <a class="subcard-book flip-book-link" href="booking.html?service=Facials&amp;subservice=Standard+Facial">Book →</a>
+                  </div>
+                </div>
+                <div class="subcard-row">
+                  <img src="images/facial-subcard-chemicalpeel.webp" alt="Chemical Peel">
+                  <div class="subcard-row-info">
+                    <span class="subcard-row-name">Chemical Peel</span>
+                    <span class="subcard-row-price">From $80</span>
+                    <a class="subcard-book flip-book-link" href="booking.html?service=Facials&amp;subservice=Chemical+Peel">Book →</a>
+                  </div>
+                </div>
+                <div class="subcard-row">
+                  <img src="images/facial-subcard-hydrafacial.jpeg" alt="Hydrafacial">
+                  <div class="subcard-row-info">
+                    <span class="subcard-row-name">Hydrafacial</span>
+                    <span class="subcard-row-price">From $120</span>
+                    <a class="subcard-book flip-book-link" href="booking.html?service=Facials&amp;subservice=Hydrafacial">Book →</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Waxing -->
+        <div class="flip-card reveal up reveal-delay-3">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img class="flip-card-front-img" src="images/waxing-card.jpg" alt="Waxing" style="width:100%;height:70%;object-fit:cover;">
+              <div class="flip-card-front-body">
+                <h3>Waxing</h3>
+                <span class="flip-hint">Hover me</span>
+              </div>
+            </div>
+            <div class="flip-card-back has-subcards">
+              <h3>Waxing</h3>
+              <span class="flip-sub-label">Smooth &amp; clean</span>
+              <div class="subcard-list">
+                <div class="subcard-row">
+                  <img src="images/waxing-subcard-eyebrows.jpeg" alt="Eyebrow wax">
+                  <div class="subcard-row-info">
+                    <span class="subcard-row-name">Eyebrows</span>
+                    <span class="subcard-row-price">From $15</span>
+                    <a class="subcard-book flip-book-link" href="booking.html?service=Waxing&amp;subservice=Eyebrows">Book →</a>
+                  </div>
+                </div>
+                <div class="subcard-row">
+                  <img src="images/waxing-subcard-armpits.jpeg" alt="Armpit wax">
+                  <div class="subcard-row-info">
+                    <span class="subcard-row-name">Underarms</span>
+                    <span class="subcard-row-price">From $20</span>
+                    <a class="subcard-book flip-book-link" href="booking.html?service=Waxing&amp;subservice=Underarms">Book →</a>
+                  </div>
+                </div>
+                <div class="subcard-row">
+                  <img src="images/waxing-subcard-chestandback.jpeg" alt="Chest and back wax">
+                  <div class="subcard-row-info">
+                    <span class="subcard-row-name">Chest &amp; Back</span>
+                    <span class="subcard-row-price">From $50</span>
+                    <a class="subcard-book flip-book-link" href="booking.html?service=Waxing&amp;subservice=Chest+%26+Back">Book →</a>
+                  </div>
+                </div>
+                <div class="subcard-row">
+                  <div class="subcard-row-info">
+                    <span class="subcard-row-name">Bikini Wax</span>
+                    <span class="subcard-row-price">From $70</span>
+                    <a class="subcard-book flip-book-link" href="booking.html?service=Waxing&amp;subservice=Bikini+Wax">Book →</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Deep Conditioning (kept, text back) -->
+        <div class="flip-card reveal up reveal-delay-1">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="flip-card-front-img"></div>
+              <div class="flip-card-front-body">
+                <h3>Deep Conditioning</h3>
+                <span class="flip-hint">Hover me</span>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <div class="service-icon">💧</div>
+              <h3>Deep Conditioning</h3>
+              <p>An intensive moisture treatment that restores softness, reduces breakage, and brings life back to over-processed or dry hair. Add it to any service or book it on its own.</p>
+              <div class="price-range">
+                <span class="price-label">Starting at</span>
+                <span class="price-value">$35</span>
+              </div>
+              <a class="flip-back-cta flip-book-link" href="booking.html?service=Deep+Conditioning">Book This Service →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Keratin Treatment (kept, text back) -->
+        <div class="flip-card reveal up reveal-delay-2">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="flip-card-front-img"></div>
+              <div class="flip-card-front-body">
+                <h3>Keratin Treatment</h3>
+                <span class="flip-hint">Hover me</span>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <div class="service-icon">🪄</div>
+              <h3>Keratin Treatment</h3>
+              <p>Smooth out frizz and reduce styling time for up to 3 months. Our keratin treatments leave hair glossy, manageable, and soft without stripping your natural texture entirely.</p>
+              <div class="price-range">
+                <span class="price-label">Starting at</span>
+                <span class="price-value">$200</span>
+              </div>
+              <a class="flip-back-cta flip-book-link" href="booking.html?service=Consultation">Book a Consultation →</a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /services-grid -->
+
+      <!-- CTA under services -->
+      <div class="text-center reveal up" style="margin-top:5rem;">
+        <span class="section-label" style="justify-content:center;display:flex;">Not sure which service is right for you?</span>
+        <h2 class="section-title" style="margin-bottom:1rem;">Let's figure it out <em>together.</em></h2>
+        <p class="section-sub" style="margin:0 auto 2.5rem;text-align:center;">Book a consultation and we'll walk you through everything. No commitment, no pressure.</p>
+        <a href="booking.html" class="btn btn-primary">Book a Consultation</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-logo">
+        <span class="logo-cc">C&amp;C</span>
+        <span class="logo-sub">by Jordan &amp; Aurora</span>
+        <p class="footer-desc">A boutique cut &amp; color studio rooted in good vibes, genuine craft, and the belief that everyone deserves a great hair day.</p>
+      </div>
+      <div>
+        <p class="footer-heading">Navigate</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Our Work</a></li>
+          <li><a href="booking.html">Book Now</a></li>
+          <li><a href="calendar.html">Calendar</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Services</p>
+        <ul class="footer-links">
+          <li><a href="services.html">Hair Color</a></li>
+          <li><a href="services.html">Cuts &amp; Trims</a></li>
+          <li><a href="services.html">Perms</a></li>
+          <li><a href="services.html">Facials</a></li>
+          <li><a href="services.html">Waxing</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <p class="footer-heading">Get in Touch</p>
+        <p>
+          123 Bloom Street<br>
+          Suite 4, Your City<br><br>
+          <a href="tel:5551234567">(555) 123-4567</a><br>
+          <a href="mailto:hello@candcsalon.com">hello@candcsalon.com</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-social">
+      <span class="footer-social-label">Follow Along</span>
+      <a href="https://www.instagram.com/candcbyjordanaurora/" target="_blank" rel="noopener noreferrer" aria-label="C&amp;C on Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </a>
+      <a href="https://www.facebook.com/candcbyjordanaurora" target="_blank" rel="noopener noreferrer" aria-label="C&amp;C on Facebook">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+      </a>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 C&amp;C by Jordan &amp; Aurora. All rights reserved.</span>
+      <span>Website designed by <a href="https://thecodingnewbie.com/index.html" target="_blank" rel="noopener">TheCodingNewbie</a></span>
+      <a href="booking.html">Book an Appointment &rarr;</a>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
