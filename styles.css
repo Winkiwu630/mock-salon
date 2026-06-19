@@ -1702,6 +1702,8 @@ button { font-family: var(--font-body); cursor: pointer; }
 
   .about-grid { grid-template-columns: 1fr; gap: 3rem; }
   .about-img-accent { display: none; }
+  .reveal.right,
+  .reveal.left { transform: translateY(40px); }
 
   .team-grid { grid-template-columns: 1fr; }
   .team-header { flex-direction: column; align-items: flex-start; }
