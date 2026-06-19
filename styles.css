@@ -30,6 +30,24 @@
   --radius-sm:      8px;
 }
 
+/* ===== DEMO BAR ===== */
+.demo-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(42, 15, 35, 0.95);
+  color: rgba(255,255,255,0.6);
+  font-size: 0.82rem;
+  text-align: center;
+  padding: 0.85rem 1.5rem;
+  z-index: 9999;
+  letter-spacing: 0.04em;
+  backdrop-filter: blur(6px);
+}
+.demo-bar a { color: var(--gold); font-weight: 600; }
+.demo-bar a:hover { color: var(--cream); }
+
 /* ===== RESET & BASE ===== */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; font-size: 16px; overflow-x: hidden; }
