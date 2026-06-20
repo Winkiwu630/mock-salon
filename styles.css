@@ -709,7 +709,7 @@ button { font-family: var(--font-body); cursor: pointer; }
 /* ===== FOOTER ===== */
 .footer {
   background: var(--plum-dark);
-  padding: 5rem 2rem 2.5rem;
+  padding: 5rem 2rem 5rem;
 }
 .footer-grid {
   display: grid;
