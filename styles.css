@@ -1547,11 +1547,11 @@ button { font-family: var(--font-body); cursor: pointer; }
   position: fixed;
   inset: 0;
   background: rgba(42,15,35,0.65);
-  z-index: 800;
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem;
+  padding: calc(var(--nav-h) + 1.5rem) 1.5rem calc(3rem + 1.5rem);
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
@@ -1563,6 +1563,8 @@ button { font-family: var(--font-body); cursor: pointer; }
   padding: 2.5rem;
   max-width: 500px;
   width: 100%;
+  max-height: calc(100vh - var(--nav-h) - 5rem);
+  overflow-y: auto;
   box-shadow: var(--shadow-lg);
   transform: scale(0.95);
   transition: transform 0.3s ease;
